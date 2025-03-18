@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://281ho71lkntc"]
+
+[ext_resource type="PackedScene" uid="uid://dsgv67ud71cyb" path="res://Scenes/player.tscn" id="1_a02cp"]
+
+[sub_resource type="TileSet" id="TileSet_yp4wr"]
+
+[node name="World" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_yp4wr")
+
+[node name="Player" parent="." instance=ExtResource("1_a02cp")]
+position = Vector2(43, 25)
